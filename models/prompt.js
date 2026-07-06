@@ -16,7 +16,5 @@ const PromptSchema = new Schema({
 });
 
 const Prompt = models.Prompt || model("Prompt", PromptSchema);
-const prompts = await Prompt.find({}).populate("creator");
 
-console.log(prompts);
 export default Prompt;
